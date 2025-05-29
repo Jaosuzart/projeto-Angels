@@ -52,7 +52,7 @@
             overflow: hidden;
             border: none;
             margin-bottom: 20px;
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.514);
             height: 100%;
         }
 
@@ -77,6 +77,21 @@
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* NOVO ESTILO PARA O BOTÃO CLARO */
+        .btn-light-custom {
+            background: linear-gradient(135deg, #ffffff, #f0f0f0);
+            color: #1a237e;
+            border: 1px solid #d0d0d0;
+            transition: all 0.3s;
+        }
+
+        .btn-light-custom:hover {
+            background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+            color: #0d145c;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         footer {
@@ -240,7 +255,7 @@
                                 <a class="nav-link" href="#contact">Contato</a>
                             </li>
                             <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                                <a class="btn btn-outline-light" href="#contact">Reservar Agora</a>
+                                <a class="btn btn-light-custom" href="#contact">Reservar Agora</a>
                             </li>
                         </ul>
                     </div>
@@ -256,7 +271,8 @@
                     </p>
                     <div class="d-flex justify-content-center flex-wrap hero-buttons">
                         <a href="#services" class="btn btn-primary btn-lg px-4">Conheça nossos serviços</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Fazer Reserva</a>
+                        <!-- Botão corrigido com nova classe -->
+                        <a href="#contact" class="btn btn-light-custom btn-lg px-4">Fazer Reserva</a>
                     </div>
                 </div>
             </section>
